@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{listings}
+
+
+
+\begin{document}
+	\title{Comandos b\'asicos de git y github}
+	\date{\today}
+	\author{Israel Jv}
+	\maketitle
+	
+	\section{Git}
+	Para inicializar un repositorio en nuestro ordenador, es necesario abrir una terminal en la carpeta donde se quiera tener el control de versiones e ingresamos lo siguiente:
+	
+	\begin{lstlisting}[language=Bash]
+		git init
+	\end{lstlisting}
+	
+	Nuestros documentos pueden estar en dos estados: sin estar en seguimiento y en espera de commit.
+	Para saber el estado de nuestros archivos utilizamos el comando:
+	
+	\begin{lstlisting}[language=Bash]
+		git status
+	\end{lstlisting}
+
+	Los commits son puntos de "recuperaci\'on". Supongamos que todo jala a la perfecci\'on y decidimos hacer commit, pero luego metemos algo mal y ya no corre nuestro programa. Es entonces cuando podemos regresarnos al punto en donde todo jala bien y poder intentar de nuevo sin tener problema alguno. \\
+	Como dijimos antes, hay dos estados. Para dar seguimiento a todos los archivos utilizaremos el comando:
+	
+	\begin{lstlisting}[language=Bash]
+		git add .
+	\end{lstlisting}
+
+	Con esto, al ejecutar el comando de ver el estado con el comando status, veremos que ahora el color de nuestros archivos pasaron de rojo a verde. \\
+	Para hacer un punto de recuperaci\'on tenemos que ejecutar el comando: 
+	
+	\begin{lstlisting}[language=Bash]
+		git commit -m "mensaje"
+	\end{lstlisting}
+	
+	El mensaje que pongamos tiene que ser corto y significativo para que tanto t\'u como los dem\'as miembros del equipo sepan cuales fueron los cambios que realizaste. \\
+	Estos 
+	
+	
+\end{document}
