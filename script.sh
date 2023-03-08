@@ -1,2 +1,3 @@
+mensaje="Guardado $(date "%Y-%m-%d:%H:%M:%S")"
 git add .
-git commit -m "Guardado automatico"
+git commit -m $mensaje
